@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: #ddd;
+    color: #333;
+}
+nav{
+background: #fff;
+justify-content: space-around;
+display: flex;
+padding: 1.6em 0;
+}
+
+/* ============ */
+.menu ul li{
+    list-style: none;
+    display: inline;
+}
+ul li{
+    margin: 0 1em;
+}
+/* positioning ===============  */
+.dropdown{
+    position: relative;
+}
+.dropdown ul{
+    position: absolute;
+    left: 0;
+    display: none;
+}
+.dropdown:hover ul{
+    
+    display: block;
+}
+.sub-menu{
+    background: #ddd;
+    width: 100px;
+    opacity: 0.5;
+}
+.toggle{
+    display: none;
+
+}
+.line{
+    width: 30px;
+    color: #000000;
+    height: 5px;
+    background: #000000;
+    margin: .3em 0;
+    padding: 0;
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .menu{
+        display: none;
+    }
+    .toggle {
+        display: inline-block;
+    
+    }
+}
+
+
